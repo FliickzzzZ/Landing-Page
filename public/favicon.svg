@@ -1,1 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- El degradado principal del cuerpo del logo -->
+    <linearGradient id="avanttyLogoGrad" x1="20" y1="100" x2="100" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#111827" />
+      <stop offset="100%" stopColor="#1D61F2" />
+    </linearGradient>
+    
+    <!-- El degradado del triángulo interno -->
+    <linearGradient id="avanttyBlueAccent" x1="45" y1="90" x2="75" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#1D61F2" />
+      <stop offset="100%" stopColor="#38BDF8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Estructura exterior de la 'A' con el degradado principal aplicado -->
+  <path 
+    d="M 60 15 L 105 100 L 84 100 L 60 52 L 36 100 L 15 100 Z" 
+    fill="url(#avanttyLogoGrad)" 
+  />
+
+  <!-- Triángulo central con el degradado azul brillante aplicado -->
+  <polygon 
+    points="60,62 46,92 74,92" 
+    fill="url(#avanttyBlueAccent)" 
+  />
+</svg>
 
