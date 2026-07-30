@@ -47,7 +47,7 @@ export const BackgroundBeamsWithCollision = ({
   return (
     <div
       className={cn(
-        "relative flex items-center w-full justify-center overflow-hidden bg-gradient-to-b from-white to-neutral-100 dark:from-neutral-950 dark:to-neutral-800",
+        "relative flex items-center w-full justify-center overflow-hidden bg-gradient-to-b from-white via-white to-gray-50/50",
         className
       )}
     >

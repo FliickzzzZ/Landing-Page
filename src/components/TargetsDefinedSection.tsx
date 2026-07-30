@@ -97,7 +97,7 @@ export const TargetsDefinedSection: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="lg:col-span-7 relative w-full"
+            className="lg:col-span-7 relative w-full pointer-events-none select-none"
           >
             {/* Outer Soft Lavender Gradient Container matching mockup style */}
             <div className="rounded-[32px] bg-gradient-to-b from-[#F3F0FD]/80 to-[#EAE5FA]/80 p-5 sm:p-10 shadow-xs">
@@ -142,8 +142,8 @@ export const TargetsDefinedSection: React.FC = () => {
                     
                     {/* Primary Target Candidate Profile Card */}
                     <div 
-                      className={`p-3.5 bg-white border rounded-xl transition-all shadow-xs flex items-center justify-between cursor-pointer ${
-                        isOpenModal ? 'border-black ring-2 ring-black/10' : 'border-gray-200 hover:border-gray-400'
+                      className={`p-3.5 bg-white border rounded-xl transition-all shadow-xs flex items-center justify-between ${
+                        isOpenModal ? 'border-black ring-2 ring-black/10' : 'border-gray-200'
                       }`}
                     >
                       <div className="flex items-center gap-3">

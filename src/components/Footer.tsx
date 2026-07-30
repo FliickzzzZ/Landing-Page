@@ -50,17 +50,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onNavigateAndScroll 
           <span className="text-gray-400">•</span>
 
           <span className="text-[#000000]">naim@avanttyops.com</span>
-
-          <span className="text-gray-400">•</span>
-
-          <a 
-            href="https://www.linkedin.com/in/naim-ramos-castellano-3a1583423/" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="hover:underline transition-colors"
-          >
-            LinkedIn
-          </a>
         </div>
 
       </div>
