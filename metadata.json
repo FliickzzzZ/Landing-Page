@@ -1,0 +1,6 @@
+{
+  "name": "Avantty | Executive Search & Recruitment Automation",
+  "description": "Premium workflow automation systems for luxury executive search and recruitment firms, eliminating manual ATS, CRM, and spreadsheet updates.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

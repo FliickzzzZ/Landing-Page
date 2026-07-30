@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <g transform="translate(5, 5)">
+    <!-- Top face (light silver/white) -->
+    <polygon points="15,70 75,10 85,18 25,78" fill="#E2E8F0" stroke="#334155" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Side face (medium silver) -->
+    <polygon points="25,78 85,18 85,30 25,90" fill="#94A3B8" stroke="#334155" stroke-width="3" stroke-linejoin="round"/>
+    <!-- End face (dark silver) -->
+    <polygon points="15,70 25,78 25,90 15,82" fill="#64748B" stroke="#334155" stroke-width="3" stroke-linejoin="round"/>
+    
+    <!-- Small block at bottom right -->
+    <polygon points="55,80 70,70 82,78 67,88" fill="#E2E8F0" stroke="#334155" stroke-width="3" stroke-linejoin="round"/>
+    <polygon points="67,88 82,78 82,85 67,95" fill="#94A3B8" stroke="#334155" stroke-width="3" stroke-linejoin="round"/>
+    <polygon points="55,80 67,88 67,95 55,87" fill="#64748B" stroke="#334155" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+</svg>

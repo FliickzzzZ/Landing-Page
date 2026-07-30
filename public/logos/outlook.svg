@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="otlk1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#28A8EA" />
+      <stop offset="100%" stop-color="#0078D4" />
+    </linearGradient>
+    <linearGradient id="otlk2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0078D4" />
+      <stop offset="100%" stop-color="#004578" />
+    </linearGradient>
+  </defs>
+  <path fill="url(#otlk1)" d="M35 15 L85 15 C90 15 95 18 95 24 L95 65 L35 45 Z" />
+  <path fill="url(#otlk2)" d="M35 45 L95 65 L95 78 C95 84 90 88 85 88 L35 88 Z" />
+  <path fill="#50E6FF" opacity="0.8" d="M35 55 L95 72 L80 88 L35 70 Z" />
+  <rect x="5" y="25" width="48" height="48" rx="10" fill="#0078D4" />
+  <text x="29" y="59" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="32" text-anchor="middle">O</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FF7A59">
+  <!-- Top vertical pin -->
+  <circle cx="12" cy="4" r="2.5" />
+  <circle cx="12" cy="4" r="1.1" fill="#FFFFFF" />
+  <!-- Vertical connecting arm -->
+  <rect x="11.2" y="5.2" width="1.6" height="5.8" />
+  <!-- Top-right pin -->
+  <circle cx="19.2" cy="9.2" r="2.5" />
+  <!-- Diagonal connecting arm -->
+  <path d="M12 12l6.2-3.8.8 1.3L12.8 13.3z" />
+  <!-- Center wheel with cutout -->
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 8.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11zm0 3a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5z" />
+</svg>
