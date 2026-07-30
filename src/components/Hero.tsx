@@ -12,7 +12,7 @@ interface HeroProps {
 export const Hero: React.FC<HeroProps> = () => {
   return (
     <section id="hero-section" className="relative min-h-screen w-full flex flex-col overflow-hidden">
-      <BackgroundBeamsWithCollision className="min-h-screen w-full pt-20 pb-12 flex flex-col justify-center items-center bg-gradient-to-b from-white via-white to-gray-50/50">
+      <BackgroundBeamsWithCollision className="min-h-screen w-full pt-32 sm:pt-20 pb-12 flex flex-col justify-center items-center bg-gradient-to-b from-white via-white to-gray-50/50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 flex flex-col items-center text-center my-auto">
           
           {/* Main Title - Black typography, centered, high-impact */}
@@ -93,6 +93,3 @@ export const Hero: React.FC<HeroProps> = () => {
     </section>
   );
 };
-
-
-
