@@ -27,13 +27,13 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
   };
 
   return (
-    <header id="app-header" className="fixed top-0 left-0 right-0 z-50 w-full bg-transparent transition-all duration-300 pointer-events-none pt-3 sm:pt-4 pb-2">
-      <div className="w-full px-3 sm:px-6 lg:px-10 flex items-center justify-start">
-        {/* Brand Card Pinned to Top Left */}
+    <header id="app-header" className="fixed top-0 left-0 right-0 z-50 w-full bg-transparent transition-all duration-300 pointer-events-none pt-4 sm:pt-6 pb-2">
+      <div className="w-full px-4 sm:px-6 lg:px-10 flex items-center justify-start">
+        {/* Brand Card Pinned to Top Left with absolute mobile safety margin */}
         <div className="flex items-center justify-start">
           <button 
             onClick={handleLogoClick}
-            className="bg-white/95 backdrop-blur-md px-3 py-2 sm:px-4 sm:py-2.5 rounded-2xl border border-[#E8EAED] shadow-sm flex flex-col text-left focus:outline-none group cursor-pointer hover:border-gray-400 hover:shadow-md transition-all pointer-events-auto max-w-[92vw] sm:max-w-none overflow-hidden"
+            className="bg-white/95 backdrop-blur-md px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-2xl border border-[#E8EAED] shadow-sm flex flex-col text-left focus:outline-none group cursor-pointer hover:border-gray-400 hover:shadow-md transition-all pointer-events-auto w-full sm:w-auto max-w-[calc(100vw-2rem)] sm:max-w-none overflow-hidden"
             aria-label="Avantty home"
           >
             {/* Top row: Circle Logo + "Avantty" emerging from logo */}
@@ -69,7 +69,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
                     speed={2.2} 
                     color="#111827" 
                     shineColor="#2563eb" 
-                    spread={120}
+                    spread={120} 
                   />
                 </motion.div>
               </motion.div>
