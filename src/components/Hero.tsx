@@ -20,23 +20,20 @@ export const Hero: React.FC<HeroProps> = () => {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-display text-4xl sm:text-6xl md:text-7xl font-extrabold text-[#000000] tracking-tight leading-[1.08] max-w-4xl mx-auto mb-6"
+            className="font-display text-3xl sm:text-6xl md:text-7xl font-extrabold text-[#000000] tracking-tight leading-[1.1] max-w-4xl mx-auto mb-4 sm:mb-6"
           >
             Automate the chaos. Master your time
           </motion.h1>
 
-          {/* Subtitle with smooth, fluid left slide-in and gentle settling bounce */}
+          {/* Subtitle with mobile-safe smooth fade & gentle slide */}
           <motion.p 
-            initial={{ opacity: 1, x: "-80vw" }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ 
-              type: "spring",
-              stiffness: 75,
-              damping: 15,
-              mass: 1,
-              delay: 0.1 
+              duration: 0.6,
+              delay: 0.2 
             }}
-            className="text-base sm:text-lg md:text-xl text-[#000000] font-semibold max-w-2xl mx-auto leading-relaxed mb-6"
+            className="text-sm sm:text-lg md:text-xl text-[#000000] font-semibold max-w-2xl mx-auto leading-relaxed mb-6 px-2"
           >
             Your team can now focus on what truly drives results.
           </motion.p>
@@ -46,7 +43,7 @@ export const Hero: React.FC<HeroProps> = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="w-full max-w-4xl my-6 py-3 px-4 rounded-2xl bg-white border border-slate-200 shadow-sm overflow-hidden"
+            className="w-full max-w-4xl my-4 sm:my-6 py-2.5 sm:py-3 px-3 sm:px-4 rounded-2xl bg-white border border-slate-200 shadow-sm overflow-hidden"
           >
             <LogoLoop
               logos={techLogos}
@@ -66,25 +63,25 @@ export const Hero: React.FC<HeroProps> = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="w-full max-w-2xl mt-4 pt-4 grid grid-cols-3 gap-6 sm:gap-10 text-center"
+            className="w-full max-w-2xl mt-2 sm:mt-4 pt-2 sm:pt-4 grid grid-cols-3 gap-2 sm:gap-10 text-center"
           >
             <div>
-              <div className="font-display text-2xl sm:text-4xl font-extrabold text-[#000000]">
+              <div className="font-display text-xl sm:text-4xl font-extrabold text-[#000000]">
                 <CountUp from={0} to={15} duration={2} /> hours
               </div>
-              <div className="text-xs sm:text-sm text-[#000000] font-semibold mt-1.5">Saved every week</div>
+              <div className="text-[11px] sm:text-sm text-[#000000] font-semibold mt-1">Saved every week</div>
             </div>
             <div>
-              <div className="font-display text-2xl sm:text-4xl font-extrabold text-[#000000]">
+              <div className="font-display text-xl sm:text-4xl font-extrabold text-[#000000]">
                 <CountUp from={0} to={100} duration={2} />%
               </div>
-              <div className="text-xs sm:text-sm text-[#000000] font-semibold mt-1.5">Data accuracy</div>
+              <div className="text-[11px] sm:text-sm text-[#000000] font-semibold mt-1">Data accuracy</div>
             </div>
             <div>
-              <div className="font-display text-2xl sm:text-4xl font-extrabold text-[#000000]">
+              <div className="font-display text-xl sm:text-4xl font-extrabold text-[#000000]">
                 <CountUp from={100} to={0} direction="down" duration={2} />%
               </div>
-              <div className="text-xs sm:text-sm text-[#000000] font-semibold mt-1.5">Typing required</div>
+              <div className="text-[11px] sm:text-sm text-[#000000] font-semibold mt-1">Typing required</div>
             </div>
           </motion.div>
 

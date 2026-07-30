@@ -320,10 +320,10 @@ export const ManuallySection: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="lg:col-span-7 relative w-full"
           >
-            <div className="relative mx-auto rounded-2xl bg-white shadow-2xl overflow-hidden min-h-[460px]">
+            <div className="relative mx-auto rounded-2xl bg-white shadow-2xl overflow-hidden min-h-[420px] sm:min-h-[460px]">
               
               {/* macOS Window Header */}
-              <div className="bg-gray-100 px-4 py-3 flex items-center justify-between border-b border-gray-200">
+              <div className="bg-gray-100 px-3 sm:px-4 py-2.5 sm:py-3 flex items-center justify-between border-b border-gray-200">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full bg-[#FF5F56] border border-black/10" />
                   <div className="w-3 h-3 rounded-full bg-[#FFBD2E] border border-black/10" />

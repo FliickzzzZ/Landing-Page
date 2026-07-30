@@ -112,13 +112,13 @@ export const AutonomousFollowUpsSection: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="lg:col-span-7 relative w-full"
+            className="lg:col-span-7 relative w-full pointer-events-none select-none"
           >
             {/* Outer Soft Lavender Gradient Container matching screenshot */}
-            <div className="rounded-[32px] bg-gradient-to-b from-[#F3F0FD]/80 to-[#EAE5FA]/80 p-5 sm:p-10 shadow-xs">
+            <div className="rounded-[32px] bg-gradient-to-b from-[#F3F0FD]/80 to-[#EAE5FA]/80 p-3 sm:p-10 shadow-xs">
               
               {/* Inner macOS Mail Window matching screenshot */}
-              <div className="relative mx-auto rounded-2xl bg-white shadow-xl overflow-hidden min-h-[440px] flex flex-col justify-between">
+              <div className="relative mx-auto rounded-2xl bg-white shadow-xl overflow-hidden min-h-[380px] sm:min-h-[440px] flex flex-col justify-between">
                 
                 {/* Simulated Mouse Cursor moving precisely to Send button or resting */}
                 <motion.div

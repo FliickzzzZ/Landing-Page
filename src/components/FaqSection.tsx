@@ -73,10 +73,10 @@ export const FaqSection: React.FC = () => {
               >
                 <button
                   onClick={() => toggleFaq(faq.id)}
-                  className="w-full text-left p-6 sm:p-7 flex items-center justify-between gap-4 focus:outline-none cursor-pointer"
+                  className="w-full text-left p-4 sm:p-7 flex items-center justify-between gap-3 sm:gap-4 focus:outline-none cursor-pointer"
                   aria-expanded={isOpen}
                 >
-                  <div className="flex items-start gap-3.5 pr-2">
+                  <div className="flex items-start gap-3 sm:gap-3.5 pr-1 sm:pr-2">
                     <div className={`mt-0.5 w-6 h-6 rounded-lg flex items-center justify-center shrink-0 ${
                       isOpen ? 'bg-black text-white' : 'bg-gray-100 text-gray-500'
                     }`}>
@@ -106,7 +106,7 @@ export const FaqSection: React.FC = () => {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3, ease: 'easeInOut' }}
                     >
-                      <div className="px-6 pb-6 pt-0 sm:px-7 sm:pb-7 pl-13 text-sm sm:text-base text-gray-800 font-medium leading-relaxed border-t border-gray-100/80 pt-4 mt-1">
+                      <div className="px-4 pb-5 pt-0 sm:px-7 sm:pb-7 sm:pl-13 text-sm sm:text-base text-gray-800 font-medium leading-relaxed border-t border-gray-100/80 pt-3 mt-1">
                         {faq.answer}
                       </div>
                     </motion.div>

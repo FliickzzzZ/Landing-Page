@@ -15,7 +15,7 @@ export const BookDemoSection: React.FC<BookDemoSectionProps> = ({ onOpenDemo }) 
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
           transition={{ duration: 0.7 }}
-          className="relative bg-white rounded-3xl p-8 sm:p-14 text-center text-black border border-gray-200 shadow-xl overflow-hidden"
+          className="relative bg-white rounded-3xl p-6 sm:p-14 text-center text-black border border-gray-200 shadow-xl overflow-hidden"
         >
           {/* Heading */}
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold text-black tracking-tight leading-[1.15] mb-4">
@@ -23,7 +23,7 @@ export const BookDemoSection: React.FC<BookDemoSectionProps> = ({ onOpenDemo }) 
           </h2>
 
           {/* Subtitle */}
-          <p className="max-w-2xl mx-auto text-base sm:text-lg text-gray-700 font-medium leading-relaxed mb-8">
+          <p className="max-w-2xl mx-auto text-sm sm:text-lg text-gray-700 font-medium leading-relaxed mb-6 sm:mb-8">
             Stop wasting valuable recruiter hours on manual ATS and CRM data entry. Schedule a personalized walkthrough to see Avantty in action.
           </p>
 
@@ -31,7 +31,7 @@ export const BookDemoSection: React.FC<BookDemoSectionProps> = ({ onOpenDemo }) 
           <div className="flex justify-center">
             <button
               onClick={onOpenDemo}
-              className="group relative inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-black hover:bg-gray-800 text-white font-extrabold text-base rounded-2xl shadow-lg transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
+              className="group relative inline-flex items-center justify-center gap-2.5 w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 bg-black hover:bg-gray-800 text-white font-extrabold text-base rounded-2xl shadow-lg transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
             >
               <Calendar className="w-5 h-5 text-white" />
               <span>Book a Demo</span>

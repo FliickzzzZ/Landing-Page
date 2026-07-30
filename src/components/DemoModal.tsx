@@ -77,8 +77,8 @@ export const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose }) => {
         onClick={onClose}
       />
 
-      <div className="flex min-h-screen items-center justify-center p-4 text-center">
-        <div className="relative w-full max-w-xl transform overflow-hidden rounded-xl bg-white p-6 md:p-8 text-left shadow-2xl transition-all border border-[#E8EAED]">
+      <div className="flex min-h-screen items-center justify-center p-3 sm:p-4 text-center">
+        <div className="relative w-full max-w-xl max-h-[90vh] overflow-y-auto transform rounded-2xl bg-white p-5 sm:p-8 text-left shadow-2xl transition-all border border-[#E8EAED]">
           
           {/* Close Trigger Button */}
           <button 
