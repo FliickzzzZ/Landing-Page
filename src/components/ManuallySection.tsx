@@ -202,22 +202,22 @@ export const ManuallySection: React.FC = () => {
       timer = setTimeout(() => {
         setPhase('CALL_1_ENDED');
       }, 2800);
-    } else if (phase === 'CALL_1_ENDED') {
-      // 2. Call 1 ended overlay (1.4s) -> start CRM typing
-      timer = setTimeout(() => {
-        setFrameIndex(0);
-        setPhase('FILL_CRM');
-      }, 1400);
-    } else if (phase === 'CANDIDATE_CALL') {
-      // 4. Candidate Call (2.8s)
-      timer = setTimeout(() => {
-        setPhase('CALL_2_ENDED');
-      }, 2800);
-    } else if (phase === 'CALL_2_ENDED') {
-      // 5. Call 2 ended overlay (1.4s) -> start ATS typing
-      timer = setTimeout(() => {
-        setFrameIndex(0);
-        setPhase('FILL_ATS');
+} else if (phase === 'CALL_1_ENDED') {
+  // 2. Call 1 ended overlay (1.4s) -> start CRM typing
+  timer = setTimeout(() => {
+    setFrameIndex(0);
+    setPhase('FILL_CRM');
+  }, 1400);
+} else if (phase === 'CANDIDATE_CALL') {
+  // 4. Candidate Call (2.8s)
+  timer = setTimeout(() => {
+    setPhase('CALL_2_ENDED');
+  }, 2800);
+} else if (phase === 'CALL_2_ENDED') {
+  // 5. Call 2 ended overlay (1.4s) -> start ATS typing
+  timer = setTimeout(() => {
+    setFrameIndex(0);
+    setPhase('FILL_ATS');
       }, 1400);
     } else if (phase === 'FLASH_OVERLAY') {
       // 7. Flash summary overlay (3.0s) -> loop back to start
