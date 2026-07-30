@@ -27,17 +27,17 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
   };
 
   return (
-    <header id="app-header" className="fixed top-0 left-0 right-0 z-50 w-full bg-transparent transition-all duration-300 pointer-events-none pt-4 pb-2">
-      <div className="w-full px-4 sm:px-6 lg:px-10 flex items-center justify-start">
+    <header id="app-header" className="fixed top-0 left-0 right-0 z-50 w-full bg-transparent transition-all duration-300 pointer-events-none pt-3 sm:pt-4 pb-2">
+      <div className="w-full px-3 sm:px-6 lg:px-10 flex items-center justify-start">
         {/* Brand Card Pinned to Top Left */}
         <div className="flex items-center justify-start">
           <button 
             onClick={handleLogoClick}
-            className="bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl border border-[#E8EAED] shadow-sm flex flex-col text-left focus:outline-none group cursor-pointer hover:border-gray-400 hover:shadow-md transition-all pointer-events-auto"
+            className="bg-white/95 backdrop-blur-md px-3 py-2 sm:px-4 sm:py-2.5 rounded-2xl border border-[#E8EAED] shadow-sm flex flex-col text-left focus:outline-none group cursor-pointer hover:border-gray-400 hover:shadow-md transition-all pointer-events-auto max-w-[92vw] sm:max-w-none overflow-hidden"
             aria-label="Avantty home"
           >
             {/* Top row: Circle Logo + "Avantty" emerging from logo */}
-            <div className="font-display font-bold text-lg tracking-tight text-[#202124] flex items-center py-0.5 relative">
+            <div className="font-display font-bold text-base sm:text-lg tracking-tight text-[#202124] flex items-center py-0.5 relative">
               {/* Circle Logo - Anchored on Left */}
               <div className="shrink-0 z-20 relative bg-white rounded-full">
                 <AvanttyLogo variant="circle" size="sm" />
@@ -54,7 +54,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
                 }}
               >
                 <motion.div
-                  className="font-display font-bold text-lg tracking-tight text-[#202124] pl-2.5 whitespace-nowrap block"
+                  className="font-display font-bold text-base sm:text-lg tracking-tight text-[#202124] pl-2 sm:pl-2.5 whitespace-nowrap block"
                   initial={{ x: -32, opacity: 0 }}
                   animate={isRevealed ? { x: 0, opacity: 1 } : { x: -32, opacity: 0 }}
                   transition={{
@@ -80,6 +80,3 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
     </header>
   );
 };
-
-
-
