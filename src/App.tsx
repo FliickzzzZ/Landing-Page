@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { ManuallySection } from './components/ManuallySection';
@@ -105,6 +106,8 @@ export default function App() {
       {/* Modular Multi-Step Scheduling Wizard Modal Dialog */}
       <DemoModal isOpen={isDemoOpen} onClose={handleCloseDemo} />
 
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   );
 }
